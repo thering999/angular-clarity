@@ -7,8 +7,8 @@
   <h3>User list from https://randomuser.me/api/?results=50</h3>
   <clr-datagrid [clrDgLoading]="loading">
     <clr-dg-placeholder>user not found!</clr-dg-placeholder>
-    <clr-dg-column>User ID</clr-dg-column>
-    <clr-dg-column>Name</clr-dg-column>
+    <clr-dg-column [clrDgField]="'login.username'">User ID</clr-dg-column>
+    <clr-dg-column [clrDgField]="'name.first'">Name</clr-dg-column>
     <clr-dg-column>gender</clr-dg-column>
     <clr-dg-column>dob</clr-dg-column>
     <clr-dg-column>email</clr-dg-column>
